@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Restaurant Reviews</title>
@@ -18,7 +19,7 @@
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section class="restaurants">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
@@ -33,7 +34,9 @@
   </main>
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <!-- <script type="application/javascript" charset="utf-8" src="sw.js"></script> -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf78qJAZTKDOR1F2ZxHQBSmENYO4kg_fY&libraries=places&callback=initMap"></script>
 
 
