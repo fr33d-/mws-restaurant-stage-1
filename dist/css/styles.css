@@ -95,10 +95,9 @@ nav {
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  min-width: 460px;
+  min-width: 360px;
   width: 100%;
-  height: 80px;
-  padding-top: 10px;
+  padding: 10px 0;
   background-color: #3397DB;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -134,11 +133,12 @@ nav {
     background-color: #fff;
     border: 2px solid #ccc;
     font-family: Arial,sans-serif;
-    margin: 15px;
+    margin: 15px auto;
     min-height: 380px;
     padding: 0;
     text-align: left;
-    width: 380px;
+    min-width: 290px;
+    width: 80%;
     -webkit-column-break-inside: avoid;
             break-inside: avoid; }
   #restaurants-list .restaurant-img {
@@ -281,9 +281,8 @@ main {
     -webkit-column-gap: 20px;
             column-gap: 20px; }
     #restaurants-list li {
-      margin: 15px;
       text-align: left;
-      width: 32vh; }
+      width: 40vw; }
   #restaurant-container #restaurant-img, #restaurant-container p, #restaurant-container table {
     display: block;
     width: 80%;
@@ -300,11 +299,10 @@ main {
     -webkit-column-gap: 20px;
             column-gap: 20px; }
     #restaurants-list li {
-      margin: 15px;
       text-align: left;
-      width: 50vh; }
+      width: 40vw; }
   #restaurant-container #restaurant-img, #restaurant-container p {
-    width: 49vh;
+    width: 49vw;
     margin: 0 auto; }
   #restaurant-container #restaurant-img, #restaurant-container p {
     width: 49vh; }

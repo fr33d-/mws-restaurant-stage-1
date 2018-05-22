@@ -3,6 +3,7 @@ self.addEventListener('install', function(event) {
 		caches.open('restaurant-caches').then(function(cache) {
 			return cache.addAll([
 				'/',
+				'./restaurant.html',
 				'js/restaurant_info.js',
 				'data/restaurants.json',
 				'js/dbhelper.js',
@@ -39,16 +40,16 @@ self.addEventListener('fetch', function(event) {
 
 		caches.match(event.request).then(function(response) {
 			if (response) return response;
-			return fetch(event.request);
+			// return fetch(event.request);
 
-			// return fetch(event.request).then( function(response) {
-			// 	if (response.status == 404) {
-			// 		return fetch('/img/404.png');
-			// 	}
-			// 	return response;
-			// }).catch(function() {
-			// 	return fetch('/img/error.png');
-			// })
+			return fetch(event.request).then( function(response) {
+				if (response.status == 404) {
+					return fetch('/img/404.png');
+				}
+				return response;
+			}).catch(function() {
+				return fetch('/img/error.png');
+			})
 		})
 	);
 
