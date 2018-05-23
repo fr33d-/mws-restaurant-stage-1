@@ -95,7 +95,6 @@ nav {
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  min-width: 360px;
   width: 100%;
   padding: 10px 0;
   background-color: #3397DB;
@@ -137,7 +136,6 @@ nav {
     min-height: 380px;
     padding: 0;
     text-align: left;
-    min-width: 290px;
     width: 80%;
     -webkit-column-break-inside: avoid;
             break-inside: avoid; }
@@ -237,7 +235,6 @@ nav {
 
 #reviews-container {
   padding: 30px;
-  min-width: 360px;
   grid-area: reviewsContainer; }
   #reviews-container h2 {
     color: #f58500;
@@ -267,6 +264,11 @@ nav {
 
 #restaurant-hours td {
   color: #666; }
+
+.restaurants {
+  grid-area: restaurants;
+  overflow: scroll;
+  width: 100%; }
 
 main {
   display: grid;
